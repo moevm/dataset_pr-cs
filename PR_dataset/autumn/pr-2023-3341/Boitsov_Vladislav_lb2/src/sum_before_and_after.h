@@ -1,0 +1,1 @@
+void print_sum_before_and_after(int array_real_size, int array[]);

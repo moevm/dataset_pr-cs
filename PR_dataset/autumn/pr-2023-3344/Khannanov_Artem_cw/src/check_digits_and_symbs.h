@@ -1,0 +1,1 @@
+int check_digits_and_symbs (struct Sentence sentence);

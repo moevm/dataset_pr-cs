@@ -34,3 +34,15 @@
 [submodule "pr-2024-3344"]
 	path = pr-2024-3344
 	url = git@github.com:moevm/pr-2024-3344.git
+[submodule "pr-2023-3341"]
+	path = pr-2023-3341
+	url = git@github.com:moevm/pr-2023-3341.git
+[submodule "pr-2023-3342"]
+	path = pr-2023-3342
+	url = git@github.com:moevm/pr-2023-3342.git
+[submodule "pr-2023-3343"]
+	path = pr-2023-3343
+	url = git@github.com:moevm/pr-2023-3343.git
+[submodule "pr-2023-3344"]
+	path = pr-2023-3344
+	url = git@github.com:moevm/pr-2023-3344.git

@@ -1,0 +1,1 @@
+void output(int operation_number, int array[], int array_size);

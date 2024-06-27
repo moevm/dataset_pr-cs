@@ -1,0 +1,1 @@
+void print_result(int* arr, int arr_size, int operation_number);

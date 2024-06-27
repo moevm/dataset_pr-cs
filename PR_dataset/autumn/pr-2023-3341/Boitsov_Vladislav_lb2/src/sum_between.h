@@ -1,0 +1,1 @@
+void print_sum_between(int array_real_size, int array[]);

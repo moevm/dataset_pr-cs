@@ -1,0 +1,19 @@
+#ifndef COMMAND_PROCESSING_H
+#define COMMAND_PROCESSING_H
+#include "get-option.h"
+#include "give-info-about-functions.h"
+#include "give-initial-information.h"
+#include "structs.h"
+#include "return-reworked-text.h"
+#include "free-text.h"
+#include "read-text.h"
+#include "check-command-character.h"
+#include "output-struct-of-text.h"
+#include "print-uniqual-words.h"
+#include "split-sentences-on-words.h"
+#include "sort-by-length.h"
+#include "delete-special-sentences.h"
+#include "replace-date.h"
+#include "nine-func.h"
+int process_commands();
+#endif

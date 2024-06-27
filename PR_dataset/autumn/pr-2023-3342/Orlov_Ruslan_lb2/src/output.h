@@ -1,0 +1,1 @@
+int output(int f, int arr[], int size);

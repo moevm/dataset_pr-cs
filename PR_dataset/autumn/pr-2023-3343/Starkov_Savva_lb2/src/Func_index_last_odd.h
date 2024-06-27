@@ -1,0 +1,1 @@
+int Func_index_last_odd(int* massive_int, int count_number_massive);

@@ -1,0 +1,1 @@
+struct Text remove_sentences(struct Text text);

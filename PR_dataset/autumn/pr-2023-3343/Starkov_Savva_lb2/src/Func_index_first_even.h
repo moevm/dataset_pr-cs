@@ -1,0 +1,1 @@
+int Func_index_first_even(int* massive_int, int count_number_massive);

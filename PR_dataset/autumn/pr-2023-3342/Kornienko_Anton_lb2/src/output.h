@@ -1,0 +1,1 @@
+void output(int num, int array[],int len);

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1428de98-6253-4b87-8bbc-155a630a7378" name="Changes" comment="Starkov_Savva_cw: done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loc.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/loc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loc.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/loc.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Za5QzRLz4cyKZZ6vCr7jNguucA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.gcc.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/letewr/Documents/gitshit/pr-2023-3343/Starkov_Savva_cw/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="gcc - Default" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Starkov_Savva_cw" TARGET_NAME="gcc - Default" CONFIG_NAME="gcc - Default">
+      <option name="compilerOptions" value="-g" />
+      <option name="sourceFile" value="/usr/bin/gcc" />
+      <option name="toolchainName" value="Default" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1428de98-6253-4b87-8bbc-155a630a7378" name="Changes" comment="" />
+      <created>1702647337432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702647337432</updated>
+      <workItem from="1702647338484" duration="198000" />
+      <workItem from="1702647565917" duration="3526000" />
+      <workItem from="1702651433145" duration="960000" />
+      <workItem from="1702660904140" duration="1159000" />
+      <workItem from="1702752407176" duration="1206000" />
+      <workItem from="1702913462092" duration="817000" />
+      <workItem from="1703157959470" duration="17000" />
+      <workItem from="1703249266463" duration="1265000" />
+      <workItem from="1703251955328" duration="22000" />
+    </task>
+    <task id="LOCAL-00001" summary="Starkov_Savva_cw: done">
+      <option name="closed" value="true" />
+      <created>1702647630311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702647630311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Starkov_Savva_cw: done">
+      <option name="closed" value="true" />
+      <created>1702647742929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702647742929</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Starkov_Savva_cw: done">
+      <option name="closed" value="true" />
+      <created>1702650800312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702650800312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Starkov_Savva_cw: done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starkov_Savva_cw: done" />
+  </component>
+</project>

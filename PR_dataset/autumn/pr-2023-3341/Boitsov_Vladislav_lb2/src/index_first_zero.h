@@ -1,0 +1,1 @@
+int get_index_first_zero(int array_real_size, int array[]);

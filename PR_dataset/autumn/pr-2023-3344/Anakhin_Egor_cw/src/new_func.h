@@ -1,0 +1,1 @@
+void new_func(struct Text * textStructured, int size);

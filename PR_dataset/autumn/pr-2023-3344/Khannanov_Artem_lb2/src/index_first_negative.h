@@ -1,0 +1,1 @@
+int index_first_negative(int arry[], int len_array);

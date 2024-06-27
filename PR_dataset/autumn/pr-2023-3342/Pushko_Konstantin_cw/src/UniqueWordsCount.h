@@ -1,0 +1,1 @@
+struct UniqueWord* unique_words_count(struct Text text, int* unique_count);

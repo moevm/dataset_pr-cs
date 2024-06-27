@@ -1,0 +1,16 @@
+all: len.o max.o min.o diff.o sum.o menu.o 
+	gcc -o menu *.o -std=c99
+len.o: len.c len.h
+	gcc -c len.c -std=c99
+max.o: max.c max.h
+	gcc -c max.c -std=c99
+min.o: min.c min.h
+	gcc -c min.c -std=c99
+diff.o: diff.c diff.h max.h min.h
+	gcc -c diff.c -std=c99
+sum.o: sum.c sum.h min.h
+	gcc -c sum.c -std=c99
+menu.o: menu.c len.h
+	gcc -c menu.c -std=c99
+clean:
+	rm *.o

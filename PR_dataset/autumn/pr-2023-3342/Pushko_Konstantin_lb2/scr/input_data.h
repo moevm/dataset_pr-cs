@@ -1,0 +1,1 @@
+void input_data(int* arr, int* arr_size, int* operation_number);

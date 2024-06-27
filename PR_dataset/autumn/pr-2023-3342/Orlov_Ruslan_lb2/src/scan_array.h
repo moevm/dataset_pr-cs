@@ -1,0 +1,1 @@
+void scan_array(int arr[], int *size, int *first);

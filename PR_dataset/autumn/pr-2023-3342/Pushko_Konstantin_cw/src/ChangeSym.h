@@ -1,0 +1,1 @@
+struct Text change_sym(struct Text text);

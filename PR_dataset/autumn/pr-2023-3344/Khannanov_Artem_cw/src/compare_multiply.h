@@ -1,0 +1,1 @@
+int compare_multiply(const void *str1, const void *str2);

@@ -1,0 +1,1 @@
+int min(int n[], int s);
