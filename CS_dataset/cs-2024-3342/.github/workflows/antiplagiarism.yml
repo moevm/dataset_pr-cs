@@ -1,0 +1,15 @@
+name: antiplagiarism
+
+on:
+  workflow_dispatch:
+
+jobs:
+  antiplagiarism:
+    runs-on: self-hosted
+    steps:
+      - id: antiplagiarism
+        name: antiplagiarism
+        uses: moevm/pull-requests-checker@antiplagiarism
+        with:
+          github-token: ${{ github.token }}
+          repository-name: ${{ github.event.repository.full_name }}

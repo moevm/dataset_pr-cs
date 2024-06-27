@@ -1,0 +1,15 @@
+name: check-main-commits
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-main-commits:
+    runs-on: self-hosted
+    steps:
+      - id: check-main-commits
+        name: Check commits in main
+        uses: moevm/pull-requests-checker@check-main-commits
+        with:
+          github-token: ${{ github.token }}
+          repository-name: ${{ github.event.repository.full_name }}

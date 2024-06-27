@@ -1,0 +1,21 @@
+name: update-grades
+
+on:
+  workflow_dispatch:
+    inputs:
+      update_in_google_table:
+        description: "Update grades in google table which is linked with this repository"
+        required: false
+        type: boolean
+
+jobs:
+  update-grades:
+    runs-on: self-hosted
+    steps:
+      - id: update-grades
+        name: Update grades
+        uses: moevm/pull-requests-checker@update-grades
+        with:
+          github-token: ${{ github.token }}
+          repository-name: ${{ github.event.repository.full_name }}
+          update-google-table: ${{ github.event.inputs.update_in_google_table }}

@@ -1,0 +1,44 @@
+from PIL import Image, ImageDraw, ImageOps
+import math
+import numpy as np
+
+def pentagram(img, x0, y0, x1, y1, thickness, color):
+    r = (x1 - x0) // 2
+    center_x = x0 + (x1 - x0) // 2
+    center_y = y0 + (y1 - y0) // 2
+    coordinates = []
+    color = tuple(color)
+    for i in range(1, 6):
+        coordinate_x = int(center_x + r * math.cos((math.pi / 5) * (2 * i + 3 / 2)))
+        coordinate_y = int(center_y + r * math.sin((math.pi / 5) * (2 * i + 3 / 2)))
+        coord = (coordinate_x, coordinate_y)
+        coordinates.append(coord)
+    drawing = ImageDraw.Draw(img)
+    drawing.line(((coordinates * 2)[::2] + [coordinates[0]]), color, thickness)
+    drawing.ellipse((x0, y0, x1, y1), None, color, thickness)
+    return img
+
+def invert(img, N, vertical):
+    columns = img.size[0]
+    strs = img.size[1]
+    strips = math.ceil((columns if vertical else strs) / N)
+    for i in range(1, strips, 2):
+        borders = (N * i, 0, min(N * (i + 1), columns), strs) if vertical else (0, N * i, columns, min(N * (i + 1), strs))
+        invert_strips = ImageOps.invert(img.crop(borders))
+        img.paste(invert_strips, (N * i, 0) if vertical else (0, N * i))
+    return img
+
+def mix(img, rules):
+    pix = np.array(img)
+    w, h = img.size
+    x, y = w // 3, h // 3
+    box_l = [[] for i in range(9)]
+    box = []
+    for i in range(3):
+        for j in range(3):
+            box.append(pix[x * i:x * (i + 1), y * j: y * (j + 1)])
+    for i in rules:
+        box_l[i] = box[rules[i]]
+    image = np.vstack([np.hstack((box_l[i], box_l[i + 1], box_l[i + 2])) for i in range(0, 7, 3)])
+    img = Image.fromarray(image)
+    return img       

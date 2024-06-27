@@ -1,0 +1,24 @@
+[submodule "cs-2023-3341"]
+	path = cs-2023-3341
+	url = git@github.com:moevm/cs-2023-3341.git
+[submodule "cs-2023-3342"]
+	path = cs-2023-3342
+	url = git@github.com:moevm/cs-2023-3342.git
+[submodule "cs-2023-3343"]
+	path = cs-2023-3343
+	url = git@github.com:moevm/cs-2023-3343.git
+[submodule "cs-2023-3344"]
+	path = cs-2023-3344
+	url = git@github.com:moevm/cs-2023-3344.git
+[submodule "cs-2024-3344"]
+	path = cs-2024-3344
+	url = git@github.com:moevm/cs-2024-3344.git
+[submodule "cs-2024-3343"]
+	path = cs-2024-3343
+	url = git@github.com:moevm/cs-2024-3343.git
+[submodule "cs-2024-3342"]
+	path = cs-2024-3342
+	url = git@github.com:moevm/cs-2024-3342.git
+[submodule "cs-2024-3341"]
+	path = cs-2024-3341
+	url = git@github.com:moevm/cs-2024-3341.git
