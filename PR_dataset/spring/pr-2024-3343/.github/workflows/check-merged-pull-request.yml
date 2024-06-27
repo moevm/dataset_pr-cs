@@ -1,0 +1,36 @@
+name: check-merged-pull-request
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  revert:
+    runs-on: self-hosted
+    if: github.event.pull_request.merged == true
+    steps:
+    - id: checkout
+      name: Checkout
+      uses: actions/checkout@v4
+
+    - id: find-pr
+      name: Find PR
+      uses: jwalton/gh-find-current-pr@v1
+      with:
+          state: closed
+
+    - id: print-pr-number
+      name: PR number
+      if: success() && steps.find-pr.outputs.pr
+      run: echo "Your PR number is ${{ steps.find-pr.outputs.pr }}"
+
+    - id: check
+      name: Check merged pull request
+      if: success() && steps.find-pr.outputs.pr
+      uses: moevm/pull-requests-checker@main
+      with:
+        github-token: ${{ github.token }}
+        number-of-pr: ${{ steps.find-pr.outputs.pr }}
+        repository-name: ${{ github.event.repository.full_name }}
+        author: ${{ github.event.sender.login }}

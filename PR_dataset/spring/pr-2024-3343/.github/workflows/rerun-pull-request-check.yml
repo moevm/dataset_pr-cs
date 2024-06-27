@@ -1,0 +1,22 @@
+name: rerun-pull-request-check
+
+on:
+  workflow_dispatch:
+    inputs:
+      pull-request-number:
+        description: "Number of pull-request to rerun check"
+        required: true
+        type: int
+
+jobs:
+  rerun-pull-request-check:
+    runs-on: self-hosted
+    steps:
+      - id: rerun-pull-request-check
+        name: Rerun pull-request check
+        uses: moevm/pull-requests-checker@pull-request-check
+        with:
+          github-token: ${{ github.token }}
+          repository-name: ${{ github.event.repository.full_name }}
+          number-of-pr: ${{ inputs.pull-request-number }}
+          author: ""

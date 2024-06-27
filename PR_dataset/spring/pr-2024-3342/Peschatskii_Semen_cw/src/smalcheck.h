@@ -1,0 +1,1 @@
+int smalcheck(char *str);

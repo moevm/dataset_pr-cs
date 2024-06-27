@@ -1,0 +1,23 @@
+.idea
+.vscode
+
+Important Information
+test_code
+objects
+html
+docs/extra
+docs/html
+imgs
+
+*.png
+
+coursework.out
+cw
+cw.out
+coursework
+a.out
+
+*.o
+.*.c
+.*.h
+*.sh

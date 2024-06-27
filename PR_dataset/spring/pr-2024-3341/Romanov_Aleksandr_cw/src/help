@@ -1,0 +1,28 @@
+    
+    WELCOME TO MY CW!
+    
+    Availiable options:
+    
+    1. RGB_FILTER: 
+    	sets one RGB component to stated value"
+    	REQUIRED ARGUMENTS: --component_name (red, green or blue), --component_value (from 0 to 255)
+    
+    2. SPLIT: 
+    
+    	splits image to m*n parts
+    	REQUIRED ARGUMENTS: --number_x (> 1), --number_y(> 1), --color, --thickness (> 0)
+    
+    3. DRAW_CIRCLE: 
+    
+    	draws circle over a picture
+    	REQUIRED ARGUMENTS: --center, --radius (> 0), --color, --thickness (> 0), --fill (true/false), --fill_color
+    
+    4. DRAW SQUARE RHOMBUS
+    
+    	draws a square over a picture
+    	REQUIRED ARGUMENTS: --upper_vertex, --size (>0), --fill_color
+    	
+    NOTICE: 
+    
+    	coordinates should be enter in this format: xx.yy");
+    	colors should be enter in this format: rrr.ggg.bbb (all components should be > 0 and < 255)");
