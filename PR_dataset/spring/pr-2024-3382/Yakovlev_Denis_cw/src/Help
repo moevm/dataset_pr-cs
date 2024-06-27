@@ -1,0 +1,22 @@
+Course work for option 4.19, created by Denis Yakovlev
+
+Triangle (--triangle (-t)):
+ --points (-p):      codrinates through a point (x1.y1.x2.y2.x3.y3)
+ --thickness:        radius of triangle sides
+ --color:            color of triangle sides (r.g.b)
+ --fill (-f):        the need to fill the triangle (true or false)
+ --fill_color:       fillind color (r.g.b), if --fill (-f) is true, else no need
+ 
+Biggest rectangular (--biggest_rect (-r))
+ --old_color:        the desired color (r.g.b)
+ --new_color:        the color to be replaced with (r.g.b)
+ 
+Collage (--collage (-c)):
+ --number_x (-x):    the number of images by x
+ --number_y (-y):    the number of images by y
+ 
+Other flags:
+ --help (-h):        displays information about the program
+ --input (-i):       name of input file (image)
+ --output (-o):      name of output file (image)
+ --info:             displays information about the file (image)

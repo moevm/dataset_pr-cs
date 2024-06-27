@@ -1,0 +1,1 @@
+int sum_between_negative(int a[], int a_length);

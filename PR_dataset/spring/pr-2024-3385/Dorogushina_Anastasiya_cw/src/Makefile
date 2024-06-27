@@ -1,0 +1,4 @@
+all: cw
+
+cw:
+	gcc cw.c -lpng -lm -o cw

@@ -1,0 +1,35 @@
+Программа для обработки PNG-файла.
+
+Функционал:
+(1) Замена всех пиксели одного заданного цвета на другой цвет.
+(2) Рисование рамки в виде узора.
+(3) Поиск всех залитых прямоугольников заданного цвета и их обводка.
+
+Основные флаги:
+--help (-h): Выводит справку о программе
+--info (-f): Выводит информацию о PNG файле
+--input (-i) {filename}: Получение программой имени входного png файла
+--output (-o) {filename}: Получении программой имени выходного png файла (по умолчанию out.png)
+--color_replace (-r) {--old_color (-s), --new_color (-n)}: Заменяет все пиксели изображения цвета old_color на цвет new_color
+--ornament (-d) {--pattern (-p), --color (-c), --thickness (-t), --count (-u)}: Рисует рамку в виде узора pattern, цвета color толщины thickness, количества count.
+--filled_rects (-k) {--color (-c), --border_color (-b), --thickness (-t)}: Поиск всех залитых прямоугольников цвета color и их обводка линией толщины thickness цвета border_color.
+
+Цвет:
+После флагов: --old_color (-s), --new_color (-n), --color (-c), --border_color (-b), требуется аргумент, который задаётся строкой `rrr.ggg.bbb`, где rrr/ggg/bbb – числа, задающие цветовую компоненту. пример `--old_color 255.0.0` задаёт красный цвет.
+
+Узор:
+После флага --pattern (-p) требуются следующие аргументы в формате строки: rectangle, circle, semicircles, square.
+"rectangle" - рисует count прямоугольников цвета color с толщиной границы thickness начиная от границы изображения. Расстояние между прямоугольниками равняется thickness.
+"circle" - определяет окружность, радиус которой равен минимуму из расстояний до границы изображения по двум осям. Закрашивает цветом color все, что вне этой окружности (thickness, count не учитываются).
+"semicircles" - на границах изображения рисует count полукругов цвета color и толщины thickness. 
+"square" - расширяет границы изображения прямоугольной рамкой цвета color на толщину thickness.
+
+Толщина: 
+Толщина линии задаётся флагом `--thickness`. На вход требует число больше 0.
+
+Примеры передачи аргументов:
+./cw --color 0.0.0 --pattern rectangle --input img.png --ornament -t 40 --output img7.png --count 8
+./cw --ornament --pattern semicircles --color 174.0.255  --thickness 15 --count 5 -i img2.png -o result2.png
+./cw -k  --color 246.0.255 -b 246.255.0 -t 10 -i img6.png -o result6.png
+./cw -replace_color  -old_color 0.0.0 -new_color 12.255.0 -input img5.png -output result5.png
+

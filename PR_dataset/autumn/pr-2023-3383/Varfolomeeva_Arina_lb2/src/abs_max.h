@@ -1,0 +1,1 @@
+int abs_max(int arr_int[], int count);

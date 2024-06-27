@@ -1,0 +1,1 @@
+int abs_max(int array[], int len);

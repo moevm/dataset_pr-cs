@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int func_for0(int arr[], int count){
+    int index_first_even;
+    for (int i=0; i<count; i++){
+        if ((abs(arr[i]) % 2) == 0){
+            index_first_even = i;
+            break;
+        }
+    }
+    return index_first_even;
+}
+
+int func_for1(int arr[], int count){
+    int index_last_odd;
+    for (int i=0; i<count; i++){
+        if ((abs(arr[i]) % 2) != 0){
+            index_last_odd = i;
+        }
+    }
+    return index_last_odd;
+}
+
+int func_summ3(int arr[], int index_first_even, int index_last_odd){
+    int summ_between_even_old = 0;
+    for (int i = index_first_even; i<index_last_odd; i++){
+        summ_between_even_old += abs(arr[i]);
+    }
+    return summ_between_even_old;
+}
+
+int func_summ4(int arr[], int index_first_even, int index_last_odd, int count){
+    int summ_before_even_and_after_odd = 0;
+    for (int i = 0; i<index_first_even; i++){
+        summ_before_even_and_after_odd += abs(arr[i]);
+    }
+    for (int i = index_last_odd; i<count; i++){
+        summ_before_even_and_after_odd += abs(arr[i]);
+    }
+    return summ_before_even_and_after_odd;
+}
+
+int out(int n, int arr[], int count){
+    if (n==0){
+        printf("%d", func_for0(arr, count));
+    }
+    if (n==1){
+        printf("%d", func_for1(arr, count));
+    }
+    if (n==2){
+        printf("%d", func_summ3(arr, func_for0(arr, count), func_for1(arr, count)));
+    }
+    if (n==3){
+        printf("%d", func_summ4(arr, func_for0(arr, count), func_for1(arr, count), count));
+    }
+    if ((n>3) || (n<0)){
+        printf("Данные некорректны");
+    }
+    return 0;
+}
+
+int main()
+{
+    int n;
+    int count = 0;
+    int arr[100];
+    char simb;
+    scanf("%d", &n);
+    int i;
+    simb = ' ';
+    while (simb == ' '){
+        scanf("%d%c", &arr[count], &simb);
+        count++;
+        }
+    out(n, arr, count);
+    return 0;
+}

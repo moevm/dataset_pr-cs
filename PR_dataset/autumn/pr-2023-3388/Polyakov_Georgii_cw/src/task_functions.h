@@ -1,0 +1,10 @@
+int third_word_length(const char *sentence);
+int cmp_qsort(const void *a, const void *b);
+void delete_all_numbers(char** sentences, int last_sentence_index);
+void is_palindrom(char** sentences, int last_sentence_index);
+int delete_sentences(char** sentences, int last_sentence_index);
+void sort_sentences(char** sentences, int last_sentence_index);
+void features_help();
+int count_nums(const char *word);
+int cmp_qsort_for_words(const void *a, const void *b);
+void sort_words(char** sentences, int last_sentence_index);
