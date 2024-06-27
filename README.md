@@ -28,3 +28,7 @@ Repository composed of programming and computer science repositories for the 23-
 │       └── pr-2024-3344
 
 ```
+
+### RM reports command
+Run from root of the repo:  
+`find . -type f \( -iname "*.pdf" -o -iname "*.doc" -o -iname "*.docx"  -o -iname "*.odt" \) -delete`
